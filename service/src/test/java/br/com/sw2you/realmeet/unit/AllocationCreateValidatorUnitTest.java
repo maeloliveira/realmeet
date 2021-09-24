@@ -16,7 +16,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
-class AllocationValidatorUnitTest extends BaseUnitTest {
+class AllocationCreateValidatorUnitTest extends BaseUnitTest {
     private AllocationValidator victim;
 
     @Mock
@@ -122,7 +122,7 @@ class AllocationValidatorUnitTest extends BaseUnitTest {
     }
 
     @Test
-    void testValidateWhenStartAttIsMissing() {
+    void testValidateWhenStartAtIsMissing() {
         var exception = assertThrows(
             InvalidRequestException.class,
             () -> victim.validate(newCreateAllocationDTO().startAt(null))
@@ -135,7 +135,7 @@ class AllocationValidatorUnitTest extends BaseUnitTest {
     }
 
     @Test
-    void testValidateWhenEndAttIsMissing() {
+    void testValidateWhenEndAtIsMissing() {
         var exception = assertThrows(
             InvalidRequestException.class,
             () -> victim.validate(newCreateAllocationDTO().endAt(null))

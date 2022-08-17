@@ -2,7 +2,8 @@ package br.com.sw2you.realmeet.config;
 
 import static br.com.sw2you.realmeet.util.ResponseEntityUtils.notFound;
 
-import br.com.sw2you.realmeet.api.model.ResponseError;
+
+import br.com.sw2you.realmeet.errors.ResponseError;
 import br.com.sw2you.realmeet.exception.AllocationNotFoundException;
 import br.com.sw2you.realmeet.exception.InvalidRequestException;
 import br.com.sw2you.realmeet.exception.RoomNotFoundException;

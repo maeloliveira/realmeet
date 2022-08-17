@@ -5,7 +5,7 @@ import static br.com.sw2you.realmeet.utils.TestConstants.*;
 import static br.com.sw2you.realmeet.utils.TestDataCreator.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-import br.com.sw2you.realmeet.api.facade.AllocationApi;
+import br.com.sw2you.realmeet.api.facade.AllocationsApi;
 import br.com.sw2you.realmeet.core.BaseIntegrationTest;
 import br.com.sw2you.realmeet.domain.repository.AllocationRepository;
 import br.com.sw2you.realmeet.domain.repository.RoomRepository;
@@ -17,7 +17,7 @@ import org.springframework.web.client.HttpClientErrorException;
 
 class AllocationApiIntegrationTest extends BaseIntegrationTest {
     @Autowired
-    private AllocationApi api;
+    private AllocationsApi api;
 
     @Autowired
     private RoomRepository roomRepository;

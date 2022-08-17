@@ -5,7 +5,8 @@ import static br.com.sw2you.realmeet.utils.TestDataCreator.newAllocationBuilder;
 import static br.com.sw2you.realmeet.utils.TestDataCreator.newRoomBuilder;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
-import br.com.sw2you.realmeet.api.facade.ReportApi;
+
+import br.com.sw2you.realmeet.api.facade.ReportsApi;
 import br.com.sw2you.realmeet.core.BaseIntegrationTest;
 import br.com.sw2you.realmeet.domain.repository.AllocationRepository;
 import br.com.sw2you.realmeet.domain.repository.RoomRepository;
@@ -23,7 +24,7 @@ import org.springframework.context.annotation.Import;
 @Import(ReportApiIntegrationTest.Configuration.class)
 class ReportApiIntegrationTest extends BaseIntegrationTest {
     @Autowired
-    private ReportApi api;
+    private ReportsApi api;
 
     @Autowired
     private RoomRepository roomRepository;
@@ -33,7 +34,7 @@ class ReportApiIntegrationTest extends BaseIntegrationTest {
 
     @Override
     protected void setupEach() throws Exception {
-        setLocalHostBasePath(api.getApiClient(), "/v1");
+//        setLocalHostBasePath(api.getApiClient(), "/v1");
     }
 
     @Test

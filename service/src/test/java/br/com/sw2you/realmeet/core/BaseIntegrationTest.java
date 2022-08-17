@@ -5,7 +5,7 @@ import static br.com.sw2you.realmeet.utils.TestConstants.TEST_CLIENT_DESCRIPTION
 import static org.mockito.BDDMockito.given;
 
 import br.com.sw2you.realmeet.Application;
-import br.com.sw2you.realmeet.api.ApiClient;
+//import br.com.sw2you.realmeet.api.ApiClient;
 import br.com.sw2you.realmeet.domain.entity.Client;
 import br.com.sw2you.realmeet.domain.repository.ClientRepository;
 import java.net.MalformedURLException;
@@ -40,9 +40,9 @@ public abstract class BaseIntegrationTest {
 
     protected void setupEach() throws Exception {}
 
-    protected void setLocalHostBasePath(ApiClient apiClient, String path) throws MalformedURLException {
-        apiClient.setBasePath(new URL("http", "localhost", serverPort, path).toString());
-    }
+//    protected void setLocalHostBasePath(ApiClient apiClient, String path) throws MalformedURLException {
+//        apiClient.setBasePath(new URL("http", "localhost", serverPort, path).toString());
+//    }
 
     private void setupFlyway() {
         flyway.clean();

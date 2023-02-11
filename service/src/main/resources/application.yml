@@ -10,53 +10,17 @@ server:
 # = Spring
 # =================================
 spring:
-  profiles:
-    active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/realmeet?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3307/bluemeet?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: root
+    password: 1234
     type: com.zaxxer.hikari.HikariDataSource
-  mail:
-    host: smtp.gmail.com
-    username: a@a.com
-    password: password
-    from: a@a.com
-    properties:
-      mail.transport.protocol: smtp
-      mail.smtp.port: 587
-      mail.smtp.auth: true
-      mail.smtp.starttls.enable: true
 
 # =================================
 # = Logging
 # =================================
 logging:
   level:
-    org.springframework: INFO
-    org.flywaydb: INFO
-
-# =================================
-# = RealMeet
-# =================================
-realmeet:
-  allocations:
-    maxFilterLimit: 50
-  email:
-    templates:
-      allocationCreated:
-        subject: Novo agendamento de sala criado
-        templateName: allocation-created.html
-      allocationUpdated:
-        subject: Agendamento de sala alterado
-        templateName: allocation-updated.html
-      allocationDeleted:
-        subject: Agendamento de sala excluído
-        templateName: allocation-deleted.html
-      allocationReport:
-        subject: Relatório de agendamento de sala
-        templateName: allocation-report.html
-  reports:
-    allocationReport:
-      maxMonthsInterval: 24
+    org.springframework: ERROR
+    org.flywaydb: ERROR

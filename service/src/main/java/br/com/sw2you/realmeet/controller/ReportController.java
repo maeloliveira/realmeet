@@ -2,7 +2,6 @@ package br.com.sw2you.realmeet.controller;
 
 import static java.util.concurrent.CompletableFuture.runAsync;
 
-import br.com.sw2you.realmeet.api.facade.ReportsApi;
 import br.com.sw2you.realmeet.service.ReportCreationService;
 import br.com.sw2you.realmeet.util.ResponseEntityUtils;
 import java.time.LocalDate;

@@ -3,7 +3,6 @@ package br.com.sw2you.realmeet.controller;
 import static java.util.concurrent.CompletableFuture.runAsync;
 import static java.util.concurrent.CompletableFuture.supplyAsync;
 
-import br.com.sw2you.realmeet.api.facade.RoomsApi;
 import br.com.sw2you.realmeet.api.model.CreateRoomDTO;
 import br.com.sw2you.realmeet.api.model.RoomDTO;
 import br.com.sw2you.realmeet.api.model.UpdateRoomDTO;

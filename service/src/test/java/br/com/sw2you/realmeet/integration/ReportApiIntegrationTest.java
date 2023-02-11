@@ -6,7 +6,6 @@ import static br.com.sw2you.realmeet.utils.TestDataCreator.newRoomBuilder;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 
-import br.com.sw2you.realmeet.api.facade.ReportsApi;
 import br.com.sw2you.realmeet.core.BaseIntegrationTest;
 import br.com.sw2you.realmeet.domain.repository.AllocationRepository;
 import br.com.sw2you.realmeet.domain.repository.RoomRepository;

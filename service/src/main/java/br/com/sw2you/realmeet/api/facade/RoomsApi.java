@@ -9,6 +9,7 @@ import br.com.sw2you.realmeet.api.model.CreateRoomDTO;
 import br.com.sw2you.realmeet.api.model.ResponseError;
 import br.com.sw2you.realmeet.api.model.RoomDTO;
 import br.com.sw2you.realmeet.api.model.UpdateRoomDTO;
+import br.com.sw2you.realmeet.domain.entity.Room;
 import io.swagger.annotations.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -150,4 +151,5 @@ public interface RoomsApi {
 
     }
 
+    CompletableFuture<ResponseEntity<Room>> listRooms(@Valid Long id);
 }
